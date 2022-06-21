@@ -2,6 +2,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { MainMenuScreen, MovieListScreen, TodoListScreen } from '../screens';
 import { useColorModeValue } from 'native-base';
+import ExpensesChart from 'screens/ExpensesChart';
 
 const MainStack = createNativeStackNavigator();
 
@@ -15,6 +16,13 @@ export function MainStackNavigator() {
         },
         animation: "slide_from_right",
       }}>
+      <MainStack.Screen
+        name={'ExpensesChart'}
+        component={ExpensesChart}
+        options={{
+          headerShown: false,
+        }}
+      />
       <MainStack.Screen
         name={'MainMenu'}
         component={MainMenuScreen}

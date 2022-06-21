@@ -14,6 +14,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A55C8E7EE684303E2DC1984F /* libPods-ReactNativeBoilerplate-ReactNativeBoilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4412DEB00CE19AA0BC009F04 /* libPods-ReactNativeBoilerplate-ReactNativeBoilerplateTests.a */; };
 		C12AB9FB8E42F186A1DE3C6F /* libPods-ReactNativeBoilerplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C12F202C61B3787EA4F1072 /* libPods-ReactNativeBoilerplate.a */; };
+		C90C021F24CD4217BB48797B /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4E8ABC9D4E04520B2780371 /* DMSans-Regular.ttf */; };
+		1641AC6072714706A0E62702 /* DMSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 577BA78F753642E59BE9CEBF /* DMSans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F25A746AD83CB99E86248B56 /* Pods-ReactNativeBoilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBoilerplate.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeBoilerplate/Pods-ReactNativeBoilerplate.release.xcconfig"; sourceTree = "<group>"; };
 		F5831D1182E7ECFD565CB04C /* Pods-ReactNativeBoilerplate-ReactNativeBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBoilerplate-ReactNativeBoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeBoilerplate-ReactNativeBoilerplateTests/Pods-ReactNativeBoilerplate-ReactNativeBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4E8ABC9D4E04520B2780371 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; name = "DMSans-Regular.ttf"; path = "../src/assets/fonts/DMSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		577BA78F753642E59BE9CEBF /* DMSans.ttf */ = {isa = PBXFileReference; name = "DMSans.ttf"; path = "../src/assets/fonts/DMSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A5534858B7DCDAE2D099DE39 /* Pods */,
+				156FF0889F1847E7ABF0D160 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -148,6 +153,16 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		156FF0889F1847E7ABF0D160 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				A4E8ABC9D4E04520B2780371 /* DMSans-Regular.ttf */,
+				577BA78F753642E59BE9CEBF /* DMSans.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +260,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C90C021F24CD4217BB48797B /* DMSans-Regular.ttf in Resources */,
+				1641AC6072714706A0E62702 /* DMSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
