@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const ColumnChart = ({ data, max = 60, height = 130 }) => {
+  const [selected, setSelected] = React.useState('');
   return (
     <View style={styles.container}>
       {data.map((item, index) => {
@@ -21,12 +22,14 @@ const ColumnChart = ({ data, max = 60, height = 130 }) => {
                   height: height,
                 },
               ]}>
-              <View
+              <TouchableOpacity
                 style={[
                   styles.col,
                   { height: (item.amount / max) * height },
-                  item.day === 'wed' && { backgroundColor: 'hsl(186, 34%, 60%)' },
+                  item.day === selected && { backgroundColor: 'hsl(186, 34%, 60%)' },
                 ]}
+                activeOpacity={0.8}
+                onPress={() => setSelected(item.day)}
               />
             </View>
             <Text style={styles.text}>{item?.day || 'day'}</Text>
